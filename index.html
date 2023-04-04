@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link type="site-icon" rel="short icon" href="./img/weather.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=El+Messiri:wght@700&family=Open+Sans&family=Roboto&family=Unbounded&display=swap" rel="stylesheet">
+    <title>Погода</title>
+  </head>
+  <body>
+    <h1 class="wether__title">Погода</h1>
+    <div class="serch__weather__wrapper">
+      <div class="serch__weather__input__container">
+        <input type="text" name="serch__weather" class="serch__weather__input" placeholder="Введите название города..." value="">
+      </div>
+      <div class="serch__weather__button" onclick="search__weather__in__sity()" onkeydown="search__enter()">
+        <img src="./img/search.png" alt="" class="search__icon">
+      </div>
+    </div>
+    <div class="loading">loading <div class="ellipsis">...</div></div>
+    <div class="weather__information"></div>
+  
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

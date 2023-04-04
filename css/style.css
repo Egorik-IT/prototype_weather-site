@@ -1,0 +1,144 @@
+body {
+  background: linear-gradient(-45deg, #5400c7, #fb7743) no-repeat;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #fff;
+  overflow: hidden;
+}
+.wether__title {
+  font-size: 44px;
+  font-weight: 700;
+  text-shadow: #fff 1px 1px 2px;
+  text-align: center;
+  margin: 100px 15px 0px 15px;
+}
+.serch__weather__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto 0px auto;
+  padding: 0px 15px;
+  max-width: 1170px;
+}
+.serch__weather__input__container {
+  padding: 10px 20px;
+  background: #fff;
+  width: 100%;
+  border-radius: 6px 0px 0px 6px;
+}
+.serch__weather__input {
+  font-size: 22px;
+  font-weight: 700;
+  width: 100%;
+}
+.serch__weather__button {
+  background: #8D917A;
+  width: 50px;
+  height: 50px;
+  border-radius: 0px 6px 6px 0px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+}
+.search__icon {
+  max-width: 30px;
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.serch__weather__button:hover .search__icon {
+  max-width: 34px;
+}
+.loading {
+  display: flex;
+  font-size: 44px;
+  font-weight: 700;
+  max-width: 1170px;
+  padding: 0px 15px;
+  margin: 40px auto 0px auto;
+  animation: loadings 1s cubic-bezier(0, 0, 0.27, 1.68) forwards;
+}
+.ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 6px;
+}
+@keyframes loadings {
+  0% {
+    visibility: visible !important;
+  }
+  100% {
+    visibility: hidden !important;
+  }
+}
+@keyframes loadingse {
+  0% {
+    visibility: visible !important;
+  }
+  100% {
+    visibility: hidden !important;
+  }
+}
+@keyframes loading__ellipsis {
+  0% {
+    max-width: 0%;
+  }
+  33.3% {
+    max-width: 1%;
+  }
+  66.6% {
+    max-width: 2%;
+  }
+  99.9% {
+    max-width: 3%;
+  }
+  100% {
+    max-width: 0%;
+  }
+}
+.weather__information {
+  display: flex;
+  font-size: 44px;
+  font-weight: 700;
+  max-width: 1170px;
+  padding: 0px 15px;
+  letter-spacing: 1px;
+  margin: 40px auto 0px auto;
+}
+@media (max-width: 1010px) {
+  .weather__information {
+    font-size: 28px;
+  }
+  .loading {
+    font-size: 32px;
+  }
+}
+@media (max-width: 610px) {
+  .weather__information {
+    font-size: 18px;
+  }
+  .loading {
+    font-size: 22px;
+  }
+  .serch__weather__input {
+    font-size: 18px;
+  }
+  .serch__weather__button {
+    height: 44px;
+  }
+  .search__icon {
+    max-width: 22px;
+  }
+}
+@media (max-width: 400px) {
+  .weather__information {
+    font-size: 14px;
+  }
+  .loading {
+    font-size: 18px;
+  }
+}
